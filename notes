@@ -1,0 +1,3 @@
+this is how you access bitbucket repo:
+this is how you access bitbucket team details. Must specify role:
+curl -s --user username:password https://api.bitbucket.org/2.0/teams?role=admin | jq .
