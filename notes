@@ -1,3 +1,6 @@
 this is how you access bitbucket repo:
 this is how you access bitbucket team details. Must specify role:
 curl -s --user username:password https://api.bitbucket.org/2.0/teams?role=admin | jq .
+
+this is how you access bitbucket repository from a team:
+curl -s --user username:password https://api.bitbucket.org/2.0/repositories/skyhubdigital?page=2 | jq .values[].name
